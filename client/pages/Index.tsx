@@ -36,7 +36,7 @@ export default function Index() {
 
           <div className="stack" aria-label="ETS products">
             <a className="card stack__item" href="https://sigil.enigma.sh">
-              <span className="mono-tile" aria-hidden="true"><span>sg<i /></span></span>
+              <img className="mono-tile mono-tile--mark" src="/marks/sg.svg" alt="" width={48} height={48} />
               <span className="stack__text">
                 <span className="stack__name">Sigil</span>
                 <span className="stack__desc">Licence authority for WebAssembly</span>
@@ -44,7 +44,7 @@ export default function Index() {
               </span>
             </a>
             <a className="card stack__item" href="https://sanctum.enigma.sh">
-              <span className="mono-tile" aria-hidden="true"><span>st<i /></span></span>
+              <img className="mono-tile mono-tile--mark" src="/marks/st.svg" alt="" width={48} height={48} />
               <span className="stack__text">
                 <span className="stack__name">Sanctum</span>
                 <span className="stack__desc">Desktop sandbox for AI-generated tools</span>
@@ -93,7 +93,7 @@ export default function Index() {
           <div className="products">
             <article className="card product">
               <div className="product__head">
-                <span className="mono-tile mono-tile--lg" aria-hidden="true"><span>sg<i /></span></span>
+                <img className="mono-tile mono-tile--lg mono-tile--mark" src="/marks/sg.svg" alt="" width={56} height={56} />
                 <div>
                   <h3>Sigil</h3>
                   <p className="product__kind">Licence authority for WebAssembly</p>
@@ -128,7 +128,7 @@ export default function Index() {
 
             <article className="card product">
               <div className="product__head">
-                <span className="mono-tile mono-tile--lg" aria-hidden="true"><span>st<i /></span></span>
+                <img className="mono-tile mono-tile--lg mono-tile--mark" src="/marks/st.svg" alt="" width={56} height={56} />
                 <div>
                   <h3>Sanctum</h3>
                   <p className="product__kind">Desktop sandbox for AI-generated HTML tools</p>

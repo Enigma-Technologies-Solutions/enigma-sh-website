@@ -345,9 +345,10 @@ a:hover > .arrow { transform: translateX(3px); }
 .stack__desc { font-size: 13.5px; color: var(--ink-2); }
 .stack__text .tag { justify-self: start; margin-top: 8px; }
 
-/* Two-letter monogram tile, drawn like the sub-apps' icons: white letters on
-   ink, a volt frame inset, and a volt square on the baseline after the last
-   letter. Every tile shares one size and one type size, so marks match. Sharp. */
+/* Two-letter monogram tile. Products use --mark: public/marks/*.svg, copied
+   verbatim from each product repo's favicon.svg (one generator spec across
+   sg, st and vt), so the cards match the favicons exactly. The CSS-drawn tile
+   below remains for placeholders such as the --ghost "kc". Sharp. */
 .mono-tile {
   display: inline-flex;
   align-items: center;
@@ -365,16 +366,8 @@ a:hover > .arrow { transform: translateX(3px); }
   border-radius: 0;
   box-shadow: inset 0 0 0 4px #0A0A0A, inset 0 0 0 6px var(--volt);
 }
-.mono-tile i {
-  display: inline-block;
-  width: .2em;
-  height: .2em;
-  margin-left: .07em;
-  background: var(--volt);
-  align-self: baseline;
-}
-.mono-tile span { display: inline-flex; align-items: baseline; padding-bottom: .08em; }
 .mono-tile--lg { width: 56px; height: 56px; font-size: 22px; box-shadow: inset 0 0 0 5px #0A0A0A, inset 0 0 0 7px var(--volt); }
+.mono-tile--mark { display: block; background: none; box-shadow: none; }
 .mono-tile--ghost { background: var(--card-2); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line-2); }
 
 /* ── Strip (principles under the hero) ─────────────────────────────────── */
