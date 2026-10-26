@@ -1,4 +1,5 @@
 import { CONTACT, Layout } from "@/components/Layout";
+import { Newsletter } from "@/components/Newsletter";
 
 const Arrow = () => (
   <span className="arrow" aria-hidden="true">
@@ -301,6 +302,23 @@ export default function Index() {
                 <dd>RAK DAO, Ras Al Khaimah, UAE · No. 01010748</dd>
               </div>
             </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* Updates */}
+      <section className="section" id="updates">
+        <div className="wrap updates">
+          <div>
+            <p className="eyebrow">Updates</p>
+            <h2 className="h2">Releases, by email.</h2>
+            <p className="lede updates__lede">
+              An email when we ship a product release or publish something worth reading.
+              Nothing else.
+            </p>
+          </div>
+          <div className="card updates__card">
+            <Newsletter id="nl-email" />
           </div>
         </div>
       </section>

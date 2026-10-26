@@ -31,6 +31,9 @@ export function Layout({ children }: { children: ReactNode }) {
             ))}
           </div>
           <div className="nav__cta">
+            <a className="btn btn--ghost btn--sm" href="/#updates">
+              Get updates
+            </a>
             <a className="btn btn--volt btn--sm" href="/#contact">
               Contact
             </a>
@@ -86,6 +89,12 @@ export function Layout({ children }: { children: ReactNode }) {
                 </li>
                 <li>
                   <a href="/#clients">Clients</a>
+                </li>
+                <li>
+                  <a href="/#updates">Newsletter</a>
+                </li>
+                <li>
+                  <a href="/privacy">Privacy</a>
                 </li>
                 <li>
                   <a href={`mailto:${CONTACT}`}>{CONTACT}</a>

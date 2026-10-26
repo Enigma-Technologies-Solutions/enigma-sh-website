@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import KeyGenerationCeremony from "./pages/KeyGenerationCeremony";
+import Privacy from "./pages/Privacy";
 
 // Only production builds may be indexed; previews and dev stay out of search.
 document
@@ -17,6 +18,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/services/key-generation-ceremony" element={<KeyGenerationCeremony />} />
+      <Route path="/privacy" element={<Privacy />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>

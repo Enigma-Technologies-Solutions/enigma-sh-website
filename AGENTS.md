@@ -17,7 +17,8 @@ client/
                         by default, volt as a fill only, Poppins / Inter / Space Mono)
   global.css            fonts + Tailwind's base reset (no utility classes are used)
   components/Layout.tsx nav and footer, shared by every page
-  pages/                Index, KeyGenerationCeremony, NotFound
+  components/Newsletter.tsx  sign-up form (see "Newsletter" below)
+  pages/                Index, KeyGenerationCeremony, Privacy, NotFound
 public/                 favicons, og.png, manifest, robots.txt, sitemap.xml, CNAME
 scripts/static-routes.mjs  per-route HTML copies for Pages (runs after vite build)
 brand/                  generators for everything in public/ that is an image
@@ -49,3 +50,13 @@ Create `client/pages/MyPage.tsx` wrapped in `<Layout>`, add a `<Route>` in `App.
 above the catch-all, and list the URL in `public/sitemap.xml` (that list is also what gets a static
 HTML copy, so an unlisted route would 404 on a direct load). Social previews come from
 the static tags in `index.html` (crawlers don't run the SPA).
+
+## Newsletter
+
+The sign-up form (`#updates` on the home page) posts to the newsletter Worker at
+`newsletter.enigmahq.sh` (private repo `enigma-newsletter-worker`), which emails a
+confirmation link before adding anyone. `public/newsletter.js` handles every
+`<form data-newsletter="enigma">` and loads Cloudflare Turnstile only when someone focuses
+the form; it is the same file as on digitalcustody.academy, so change both together. On
+`localhost` it calls the Worker's dev server (`http://localhost:8795`) with Turnstile's
+test key. `/privacy` describes what the site and the newsletter collect.
