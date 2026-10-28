@@ -79,7 +79,7 @@ em{font-style:normal;background:linear-gradient(transparent 60%,#FBFF00 60%,#FBF
 </style><div class="c">
 <div class="top">${badge(66)}<span>Enigma Technologies Solutions</span></div>
 <h1>Security that keeps <em>keys, code and identity</em> with their owner.</h1>
-<div class="f"><span><b>Sigil</b><i></i><b>Sanctum</b><i></i>Key generation ceremonies</span><span>enigma.sh</span></div>
+<div class="f"><span><b>Sigil</b><i></i><b>Sanctum</b><i></i><b>Vestige</b><i></i>Key generation ceremonies</span><span>enigma.sh</span></div>
 </div>`;
   shot(html, join(pub, "og.png"), 1200, 630);
 }

@@ -21,7 +21,7 @@ export default function Index() {
             <p className="hero__sub">
               ETS builds security products and runs cryptography engagements. Sigil licenses
               WebAssembly offline, inside the module. Sanctum runs AI-written tools in a sandbox
-              you approve. Behind both: more than a decade of custody, signing and key-management
+              you approve. Vestige records on-chain that two keys met, and when. Behind all three: more than a decade of custody, signing and key-management
               systems for regulated firms.
             </p>
             <div className="btn-row">
@@ -49,6 +49,14 @@ export default function Index() {
                 <span className="stack__name">Sanctum</span>
                 <span className="stack__desc">Desktop sandbox for AI-generated tools</span>
                 <span className="tag">macOS · Windows · Linux</span>
+              </span>
+            </a>
+            <a className="card stack__item" href="https://vestige.enigma.sh">
+              <img className="mono-tile mono-tile--mark" src="/marks/vt.svg" alt="" width={48} height={48} />
+              <span className="stack__text">
+                <span className="stack__name">Vestige</span>
+                <span className="stack__desc">On-chain proof that two keys met</span>
+                <span className="tag">Ethereum · Base · Monad</span>
               </span>
             </a>
             <a className="card stack__item" href="/services/key-generation-ceremony">
@@ -82,7 +90,7 @@ export default function Index() {
           <div className="shead">
             <div>
               <p className="eyebrow">Products</p>
-              <h2 className="h2">Two products, one rule: the owner decides.</h2>
+              <h2 className="h2">Three products, one rule: the owner decides.</h2>
             </div>
             <p className="lede">
               Each one moves a decision that usually sits with a server or a script back to the
@@ -152,6 +160,39 @@ export default function Index() {
                   sanctum.enigma.sh <Arrow />
                 </a>
                 <span className="product__meta">Tauri · Rust · AGPL-3.0</span>
+              </div>
+            </article>
+
+            <article className="card product">
+              <div className="product__head">
+                <img className="mono-tile mono-tile--lg mono-tile--mark" src="/marks/vt.svg" alt="" width={56} height={56} />
+                <div>
+                  <h3>Vestige</h3>
+                  <p className="product__kind">Proof of interaction, on-chain</p>
+                </div>
+              </div>
+              <p className="product__lead">
+                Two keys co-sign a recent block; the chain records that they met, and when.
+              </p>
+              <p className="product__body">
+                A block hash can't be predicted, so a signature over it was made after that block;
+                its inclusion in a later block bounds it from the other side. A kiosk or door
+                reader and a phone's passkey, or two people's passkeys, get a timestamped record
+                without a server in between.
+              </p>
+              <ul className="points">
+                <li>Passkeys (WebAuthn) and raw P-256 device keys, checked by the contract</li>
+                <li>One address, the same bytecode, on Ethereum, Base and Monad</li>
+                <li>Source verified on Sourcify and Etherscan; try it on testnets in the browser lab</li>
+              </ul>
+              <div className="product__foot">
+                <a className="btn btn--ink btn--sm" href="https://vestige.enigma.sh">
+                  vestige.enigma.sh <Arrow />
+                </a>
+                <a className="btn btn--ghost btn--sm" href="https://vestige.enigma.sh/lab/">
+                  Lab
+                </a>
+                <span className="product__meta">Solidity · P-256 · MIT</span>
               </div>
             </article>
           </div>

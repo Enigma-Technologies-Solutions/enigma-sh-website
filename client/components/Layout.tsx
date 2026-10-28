@@ -65,6 +65,9 @@ export function Layout({ children }: { children: ReactNode }) {
                 <li>
                   <a href="https://sanctum.enigma.sh">Sanctum</a>
                 </li>
+                <li>
+                  <a href="https://vestige.enigma.sh">Vestige</a>
+                </li>
               </ul>
             </div>
             <div>
